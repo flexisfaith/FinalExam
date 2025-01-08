@@ -4,16 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+
 </head>
+<style>
+    .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+      
+      h1 {
+        color: #333;
+        font-size: 2.5rem;
+      }
+      
+      p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+      }
+      
+      button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+      }
+      
+</style>
 <body>
-  <h1>Welcome, User!</h1>
-  <button id="logout">Logout</button>
-  <script>
-    document.getElementById("logout").addEventListener("click", () => {
-      alert("Logged out!");
-      window.location.href = "login.html";
-    });
-  </script>
+  <div class="container">
+    <h1>Welcome, <span id="user-name">User</span>!</h1>
+    <p>Email: <span id="user-email">user@example.com</span></p>
+    <button id="logout">Logout</button>
+  </div>
+
+  <script src="userdashboard.js" type="module"></script>
 </body>
 </html>

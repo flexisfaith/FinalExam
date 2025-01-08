@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+</head>
+<style>
+    .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .actions {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+      }
+      
+      .manage-users {
+        background-color: #673ab7;
+        color: white;
+      }
+      
+      .manage-users:hover {
+        background-color: #5e35b1;
+      }
+      
+      #logout {
+        background-color: #d9534f;
+        color: white;
+      }
+      
+      #logout:hover {
+        background-color: #c9302c;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .hidden {
+        display: none;
+      }
+      
+</style>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <div class="actions">
+      <button class="manage-users" id="view-users">View Users</button>
+      <button class="manage-users" id="add-user">Add User</button>
+      <button id="logout">Logout</button>
+    </div>
+
+    <div id="user-list" class="hidden">
+      <h2>User List</h2>
+      <ul id="users"></ul>
+    </div>
+  </div>
+
+  <script src="admindashboard.js"></script>
+</body>
+</html>
