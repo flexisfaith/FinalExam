@@ -4,77 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <style>
+    /* Navbar Styling */
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 1em 0;
+        text-align: center;
+    }
 
-</head>
-<style>
+    .nav-container .nav-links a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .nav-container .nav-links a:hover {
+        color: #4CAF50;
+    }
+
+    /* Admin Dashboard Styling */
     .container {
         text-align: center;
-        margin-top: 50px;
-      }
-      
-      .actions {
+        margin-top: 100px; /* Adjusted margin-top to move the title down */
+    }
+
+    .actions {
         margin: 20px 0;
         display: flex;
         justify-content: center;
         gap: 20px;
-      }
-      
-      button {
+    }
+
+    button {
         padding: 1rem 2rem;
         font-size: 1rem;
         border-radius: 8px;
         cursor: pointer;
         border: none;
-      }
-      
-      .manage-users {
+    }
+
+    .manage-users {
         background-color: #673ab7;
         color: white;
-      }
-      
-      .manage-users:hover {
+    }
+
+    .manage-users:hover {
         background-color: #5e35b1;
-      }
-      
-      #logout {
+    }
+
+    #logout {
         background-color: #d9534f;
         color: white;
-      }
-      
-      #logout:hover {
+    }
+
+    #logout:hover {
         background-color: #c9302c;
-      }
-      
-      ul {
+    }
+
+    ul {
         list-style: none;
         padding: 0;
-      }
-      
-      li {
+    }
+
+    li {
         margin: 10px 0;
         padding: 10px;
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      
-      .hidden {
-        display: none;
-      }
-      
-</style>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="register.html">Register</a>
-                <a href="index.html">Login</a>
-                <a href="userdashboard.html">User Dashboard</a>
-               
-            </div>
-        </div>
-    </nav>
+    }
 
+    .hidden {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="register.html">Register</a>
+            <a href="index.html">Login</a>
+            <a href="userdashboard.html">User Dashboard</a>
+        </div>
+    </div>
+  </nav>
 
   <div class="container">
     <h1>Admin Dashboard</h1>

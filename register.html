@@ -4,40 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
-
 </head>
 <style>
-    form {
-        background-color: #fff;
-        padding: 2.5rem;
+    body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #e9eff1;
+    }
+
+    .container {
+        background-color: #ffffff;
+        padding: 3em;
         border-radius: 12px;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        text-align: center;
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
+    }
+
+    form {
         display: flex;
         flex-direction: column;
-        gap: 1.2rem;
-      }
-      
-      input {
-        padding: 0.9rem;
-        border: 1px solid #ccc;
+        gap: 1.5rem;
+    }
+
+    input {
+        padding: 1rem;
+        border: 1px solid #ddd;
         border-radius: 8px;
         font-size: 1rem;
-      }
-      
-      button {
-        background-color: #2196f3;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        background-color: #4CAF50;
         color: white;
         border: none;
+        border-radius: 8px;
+        font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s;
-      }
-      
-      button:hover {
-        background-color: #1e88e5;
-      }
-      
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .nav-container .nav-links a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    .nav-container .nav-links a:hover {
+        color: #4CAF50;
+    }
 </style>
 <body>
     <nav class="navbar">
@@ -50,13 +87,16 @@
         </div>
     </nav>
 
-  <h1>Register</h1>
-  <form id="register-form">
-    <input type="text" id="name" placeholder="Full Name" required />
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
-    <button type="submit">Register</button>
-  </form>
+    <div class="container">
+      <h1>Register</h1>
+      <form id="register-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
   <script src="register.js"></script>
 </body>
 </html>
